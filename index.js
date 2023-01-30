@@ -10,7 +10,7 @@ Inicializador().then(() => {
       status: 'online',
       afk: false,
       activities: [{
-        name: `HightLand`,
+        name: `BotBase`,
         type: ActivityType.Streaming,
         url: "https://twitch.tv/#"
       }],
