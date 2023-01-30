@@ -72,13 +72,16 @@ Inicializador().then(() => {
 
   process.on('unhandledRejection', reason => {
     console.log('\n');
-    client.CapturarErro(new Error(reason), "Erro")
+    console.log(`「📡 - Erro」`.red, new Error(reason))
+
   });
   process.on('uncaughtException', (err, origin) => {
     console.log('Erro: ');
-    client.CapturarErro(new Error(err), "Erro")
+    console.log(`「📡 - Erro」`.red, new Error(err))
+
     console.log('Origem do erro: ');
-    client.CapturarErro(new Error(origin), "Erro")
+    console.log(`「📡 - Erro」`.red, new Error(origin))
+
   });
 
   client.slashCommands = new Collection()
@@ -92,6 +95,7 @@ Inicializador().then(() => {
       require(`./handlers/${dir}`)(client).catch((err) => { client.CapturarErro(new Error(err), "Erro") })
     } else { client.CapturarErro("Esse arquivo não termina em .js", "Erro") }
   })
-  var _0x1993=["\x2E\x6A\x73","\x65\x6E\x64\x73\x57\x69\x74\x68","\x66\x69\x6C\x74\x65\x72","\x6C\x65\x6E\x67\x74\x68","\x65\x72\x72\x6F\x72","\x63\x61\x74\x63\x68","\x2E\x2F\x61\x64\x64\x6F\x6E\x73\x2F","\x2F","","\x4F\x20\x41\x72\x71\x75\x69\x76\x6F\x20\x22","\x22\x20\x65\x6D\x20\x22","\x22\x20\x74\x65\x6D\x20\x71\x75\x65\x20\x74\x65\x72\x6D\x69\x6E\x61\x20\x65\x6D\x20\x2E\x6A\x73","\x45\x72\x72\x6F","\x66\x6F\x72\x45\x61\x63\x68","\x2E\x2F\x61\x64\x64\x6F\x6E\x73"];readdirSync(_0x1993[14])[_0x1993[13]](async (_0x6c51x1)=>{readdirSync(`${_0x1993[6]}${_0x6c51x1}${_0x1993[8]}`)[_0x1993[13]](async (_0x6c51x2)=>{let _0x6c51x3=[_0x6c51x2][_0x1993[2]]((_0x6c51x4)=>{return _0x6c51x4[_0x1993[1]](_0x1993[0])});if(String(_0x6c51x3)[_0x1993[3]]> 0){require(`${_0x1993[6]}${_0x6c51x1}${_0x1993[7]}${_0x6c51x2}${_0x1993[8]}`)(client)[_0x1993[5]]((_0x6c51x5)=>{console[_0x1993[4]](_0x6c51x5)})}else {if([_0x6c51x2][_0x1993[2]]((_0x6c51x4)=>{return _0x6c51x4[_0x1993[1]](_0x1993[8])})){return}else {client.CapturarErro(`${_0x1993[9]}${_0x6c51x2}${_0x1993[10]}${_0x6c51x1}${_0x1993[11]}`,_0x1993[12])}}})})
+
+  var _0xd88b=["\x2E\x6D\x64","\x65\x6E\x64\x73\x57\x69\x74\x68","\x2E\x6A\x73","\x66\x69\x6C\x74\x65\x72","\x6C\x65\x6E\x67\x74\x68","\x65\x72\x72\x6F\x72","\x63\x61\x74\x63\x68","\x2E\x2F\x61\x64\x64\x6F\x6E\x73\x2F","\x2F","","\x4F\x20\x41\x72\x71\x75\x69\x76\x6F\x20\x22","\x22\x20\x65\x6D\x20\x22","\x22\x20\x74\x65\x6D\x20\x71\x75\x65\x20\x74\x65\x72\x6D\x69\x6E\x61\x20\x65\x6D\x20\x2E\x6A\x73","\x45\x72\x72\x6F","\x66\x6F\x72\x45\x61\x63\x68","\x2E\x2F\x61\x64\x64\x6F\x6E\x73"];readdirSync(_0xd88b[15])[_0xd88b[14]](async (_0xa877x1)=>{if(_0xa877x1[_0xd88b[1]](_0xd88b[0])){return};readdirSync(`${_0xd88b[7]}${_0xa877x1}${_0xd88b[9]}`)[_0xd88b[14]](async (_0xa877x2)=>{let _0xa877x3=[_0xa877x2][_0xd88b[3]]((_0xa877x4)=>{return _0xa877x4[_0xd88b[1]](_0xd88b[2])});if(String(_0xa877x3)[_0xd88b[4]]> 0){require(`${_0xd88b[7]}${_0xa877x1}${_0xd88b[8]}${_0xa877x2}${_0xd88b[9]}`)(client)[_0xd88b[6]]((_0xa877x5)=>{console[_0xd88b[5]](_0xa877x5)})}else {if([_0xa877x2][_0xd88b[3]]((_0xa877x4)=>{return _0xa877x4[_0xd88b[1]](_0xd88b[9])})){return}else {client.CapturarErro(`${_0xd88b[10]}${_0xa877x2}${_0xd88b[11]}${_0xa877x1}${_0xd88b[12]}`,_0xd88b[13])}}})})
   client.login(config.token)
 })
