@@ -1,7 +1,7 @@
     
 # Para obter o token do bot, é necessário acessar o endereço https://discord.com/developers/.
 # Após a criação de uma nova aplicação, basta acessar a aba "Bot" e criar um bot.
-# Em seguida, é necessário clicar na opção "Token" para obter a informação desejada."
+# Em seguida, é necessário clicar na opção "Token" para obter a informação desejada.
 token: ""
 
 # Para criar uma base de dados utilizando o Mongoose, siga os seguintes passos:
