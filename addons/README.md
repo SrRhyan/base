@@ -1,1 +1,0 @@
-# Esta pasta conterá todos os addons necessários para o funcionamento adequado do bot.
