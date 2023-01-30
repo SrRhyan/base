@@ -5,7 +5,7 @@
 
 ![Screenshot_1](./assets/Screenshot_2.png)
 
-💾 **Sistema de visualização de addons e banco de dados**:
+💾 **Sistema de visualização de addons e banco de dados (Mongoose)**:
 
 ![Screenshot_1](./assets/Screenshot_1.png)
 
