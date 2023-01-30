@@ -1,0 +1,18 @@
+    
+# Para obter o token do bot, é necessário acessar o endereço https://discord.com/developers/.
+# Após a criação de uma nova aplicação, basta acessar a aba "Bot" e criar um bot.
+# Em seguida, é necessário clicar na opção "Token" para obter a informação desejada."
+token: "MTA2NTEyNjYzMzU0MDk1NjE3MA.GGAKVb.3VprqFjjlhM4ZfK2f_xcdnCR5_HlHOXWFl0OVk"
+
+# Para criar uma base de dados utilizando o Mongoose, siga os seguintes passos:
+
+# 1. Acesse o site https://cloud.mongodb.com/.
+# 2. Crie um cluster. Caso você tenha dificuldades no processo, sugerimos que assista a tutoriais no YouTube.
+# 3. Após a criação do cluster, você precisará inserir a URL de conexão, por exemplo: mongodb://localhost:27017/admin.
+# Observe que esses passos são uma breve introdução ao processo de criação de uma base de dados com Mongoose.
+
+# É importante se familiarizar com a documentação oficial e com os recursos disponibilizados pelo MongoDB antes de prosseguir com a configuração da sua base de dados.
+mongoUri: "mongodb://localhost:27017/admin"
+
+# A cor do embed
+Cor: "0x2f3136"

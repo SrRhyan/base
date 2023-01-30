@@ -1,0 +1,21 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "uma base para addons",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js"
+  },
+  "author": "SrRhyan#8901",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "colors": "1.4.0",
+    "discord.js": "^14.7.1",
+    "js-yaml": "",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
+    "mongoose-sequence": "^5.3.1",
+    "ms": "^2.1.3"
+  }
+}
